@@ -1,0 +1,255 @@
+body {
+    font-family: "Open Sans";
+    font-weight: 200;
+    text-align: center;
+}
+
+
+/* Accordion */
+
+.accordion {
+    background-color: #eef0f6;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion.active,
+.accordion:hover {
+    background-color: #759cd8;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel.show {
+    display: block;
+}
+
+
+/* Time/Date */
+
+#clock,
+#date {
+    font-family: "Open Sans";
+    font-weight: 200;
+    text-align: center;
+}
+
+
+/* Calendar */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+/* месяцы и годы */
+
+#month-calendar {
+    width: 100%;
+    max-width: 750px;
+}
+
+.month {
+    margin: 0;
+    padding: 3rem 2rem 2rem;
+    background: #79BBDA;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: white;
+    list-style: none;
+}
+
+.month li {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #F3F2F5;
+}
+
+.month li.prev,
+.month li.next {
+    cursor: pointer;
+}
+
+.month li.prev {
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-right: 23px solid #F3F2F5;
+}
+
+.month li.next {
+    float: right;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 23px solid #F3F2F5;
+}
+
+.month li.year-name {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* дни недели */
+
+.weekdays {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #B0C5D6;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+
+.weekdays li {
+    display: inline-block;
+    flex: 0 0 calc(100% / 7);
+    text-align: center;
+    color: #050807;
+}
+
+
+/* дни */
+
+.days {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #F3F2F5;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-start;
+    height: 14rem;
+}
+
+.days li:nth-child(7n+6) {
+    color: #C92243;
+}
+
+.days li:nth-child(7n+7) {
+    color: #C92243;
+}
+
+.days li {
+    margin: 0;
+    padding: 0.5rem;
+    list-style: none;
+    display: inline-block;
+    flex: 0 0 calc(100% / 7);
+    text-align: center;
+    color: #050807;
+    font-size: 1.3rem;
+    /* line-height: 1rem; */
+}
+
+.days li.date-now {
+    font-size: 1.3rem;
+    color: #050807;
+    font-weight: 700;
+    background-color: #C92243;
+    border-radius: 50%;
+    background: rgba(201, 34, 67, 0.5);
+}
+
+
+/* задание 3 */
+
+.task_img {
+    width: 110px;
+    height: 110px;
+}
+
+
+/* задание 4 */
+
+.square {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: #F3F2F5;
+}
+
+
+/* задание 5 */
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 15px 25px;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+
+/* задание 7 */
+
+ul li {
+    list-style: none;
+    display: block;
+}
+
+.submenu {
+    display: block;
+}
+
+.del3 {
+    display: none;
+}
+
+
+/* задание 8  */
+
+#task8_block {
+    position: relative;
+    height: 200px;
+}
+
+#task8_img {
+    position: absolute;
+    z-index: 1;
+    height: 160px;
+    transition: opacity 0.8s linear;
+}
+
+#task8_text {
+    position: absolute;
+    z-index: 0;
+    margin-left: 52%;
+    margin-top: 50px;
+}

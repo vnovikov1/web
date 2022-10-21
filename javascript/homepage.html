@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>JS</title>
+</head>
+
+<body>
+    <h1>Задания по JavaScript</h1>
+    <button class="accordion">Задание 1 - Дата и время</button>
+    <div class="panel">
+        <h1 id="clock">00:00:00</h1>
+        <h3 id="date">00.00.0000</h3>
+    </div>
+    <button class="accordion">Задание 2 - Календарь</button>
+    <div class="panel">
+        <div id="month-calendar">
+            <ul class="month">
+                <li class="prev"><i class="double-left"></i></li>
+                <li class="next"><i class="double-right"></i></li>
+                <li class="month-name"></li>
+                <li class="year-name"></li>
+            </ul>
+            <ul class="weekdays">
+                <li>Пн</li>
+                <li>Вт</li>
+                <li>Ср</li>
+                <li>Чт</li>
+                <li>Пт</li>
+                <li>Сб</li>
+                <li>Вс</li>
+            </ul>
+            <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>...</li>
+                <li>31</li>
+            </ul>
+        </div>
+    </div>
+    <button class="accordion">Задание 3 - Нахождение элементов</button>
+    <div class="panel">
+        <img class="task_img" src="./assets/images/1.jpg" alt="">
+        <img class="task_img" src="./assets/images/2.jpg" alt="">
+        <p id="count_img_text">0000</p>
+    </div>
+
+    <button class="accordion">Задание 4 - Красим блок</button>
+    <div class="panel" id='panel'>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <button class="accordion">Задание 5 - Добавление абзаца</button>
+    <div class="panel" id="task_5">
+        <a id="switch" href="#">Добавить</a>
+    </div>
+
+    <button class="accordion">Задание 6 - Событие</button>
+    <div class="panel">
+        <img src="./assets/images/task6/1.jpg" id="task6_img" onmouseover="change()" alt="">
+    </div>
+
+    <button class="accordion">Задание 7 - Список с исчезающими сладостями</button>
+    <div class="panel" id="sweets" onclick="alert('Сладости')">
+        <ul>
+            <li class="del">Здесь сладости!</li>
+            <ul class="submenu" onclick="alert('Пусто')">
+                <li class="del1" onclick="alert('Конфета')">Конфета</li>
+                <li class="del1" onclick="alert('Шоколад')">Шоколад</li>
+                <li class="del2" onclick="alert('Печенье')">Печенье</li>
+            </ul>
+            <li class="del3">Сладости закончились</li>
+        </ul>
+    </div>
+
+    <!-- <button class="accordion">Задание 7 - Список с исчезающими сладостями</button>
+    <div class="panel" id="sweets">
+        <ul>
+            <li class="del">Здесь сладости!</li>
+            <ul class="submenu">
+                <li class="del1">Конфета</li>
+                <li class="del1">Шоколад</li>
+                <li class="del2">Печенье</li>
+            </ul>
+            <li class="del3">Сладости закончились</li>
+        </ul>
+    </div> -->
+
+    <button class="accordion">Задание 8 - Плавное появление картинки</button>
+    <div class="panel">
+        <div id="task8_block">
+            <p id="task8_text">Скрытый текст</p>
+            <img id="task8_img" src="assets/images/3.jpg" alt="">
+        </div>
+    </div>
+
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/clock.js"></script>
+    <script src="assets/scripts/calendar.js"></script>
+    <script src="assets/scripts/task3.js"></script>
+    <script src="assets/scripts/task4.js"></script>
+    <script src="assets/scripts/task5.js"></script>
+    <script src="assets/scripts/task6.js"></script>
+    <script src="assets/scripts/task7.js"></script>
+    <script src="assets/scripts/task8.js"></script>
+</body>
+
+</html>
